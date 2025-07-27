@@ -5,8 +5,13 @@ import sys
 import utils
 
 app = Flask(__name__)
-CORS(app)  # This will enable CORS for all routes
-base_path = ""
+@app.route('/.well-known/openapi.yaml')
+def serve_openapi():
+    return send_from_directory('.well-known', 'openapi.yaml', mimetype='text/yaml')
+
+@app.route('/.well-known/ai-plugin.json')
+def serve_manifest():
+    return send_file('.well-known/ai-plugin.json', mimetype='application/json')
 
 
 @app.route("/get_filenames", methods=["GET"])

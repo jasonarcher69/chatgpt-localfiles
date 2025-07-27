@@ -2,8 +2,8 @@
   "schema_version": "v1",
   "name_for_human": "Local Files Plugin",
   "name_for_model": "local_files",
-  "description_for_human": "Access and search local files",
-  "description_for_model": "Plugin for reading and searching user's local files",
+  "description_for_human": "Access and search your local files from ChatGPT",
+  "description_for_model": "Use this tool to read and search local files hosted on your machine.",
   "auth": {
     "type": "none"
   },
@@ -13,6 +13,6 @@
     "is_user_authenticated": false
   },
   "logo_url": "http://localhost:9900/logo.png",
-  "contact_email": "support@example.com",
+  "contact_email": "you@example.com",
   "legal_info_url": "http://localhost:9900/legal"
 }
